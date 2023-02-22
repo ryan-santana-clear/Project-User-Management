@@ -4,8 +4,6 @@ var user = {};
 function addLine(dataUser){
 
     console.log(dataUser);
-
-    var tr = document.createElement("tr");
     
     document.getElementById("table-users").innerHTML = `
         <tr>
