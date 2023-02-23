@@ -5,7 +5,8 @@ class User{
         this._name = name;
         this._gender = gender;
         this._birth = birth;
-        this._country = email;
+        this._country = country;
+        this._email = email;
         this._passsword = password;
         this._photo = photo;
         this._admin = admin;
@@ -28,6 +29,9 @@ class User{
     }
     get country(){
         return this._country;
+    }
+    get email(){
+        return this._email;
     }
     get password(){
         return this._passsword;
