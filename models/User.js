@@ -7,7 +7,7 @@ class User{
         this._birth = birth;
         this._country = country;
         this._email = email;
-        this._passsword = password;
+        this._password = password;
         this._photo = photo;
         this._admin = admin;
         this._register = new Date();
@@ -34,7 +34,7 @@ class User{
         return this._email;
     }
     get password(){
-        return this._passsword;
+        return this._password;
     }
     get photo(){
         return this._photo;
