@@ -24,7 +24,6 @@ class HttpRequest {
 
     }
 
-
     static request(method, url, params = {}){
 
         return new Promise((resolve, reject)=>{
@@ -58,7 +57,9 @@ class HttpRequest {
     
             };
     
-            ajax.send();
+            ajax.setRequestHeader('Content-Type', 'application/json');
+
+            ajax.send(JSON.stringify(params));
     
         });
         
